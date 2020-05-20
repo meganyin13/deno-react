@@ -1,0 +1,15 @@
+{
+  "name": "deno-react",
+  "version": "1.0.0",
+  "description": "Boilerplate to serve create-react-app on Deno",
+  "main": "index.js",
+  "repository": "https://github.com/meganyin13/deno-react.git",
+  "author": "Megan Yin <my474@cornell.edu>",
+  "license": "MIT",
+  "scripts": {
+    "build:frontend": "cd frontend && yarn build && cd ..",
+    "start": "yarn build:frontend && deno run --allow-net --allow-read server/staticServer.ts",
+    "tsc": "tsc -p tsconfig.json",
+    "lint": "cd frontend && yarn lint"
+  }
+}
