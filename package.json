@@ -9,7 +9,7 @@
   "scripts": {
     "build:frontend": "cd frontend && yarn build && cd ..",
     "start": "yarn build:frontend && deno run --allow-net --allow-read server/staticServer.ts",
-    "tsc": "tsc -p tsconfig.json",
+    "tsc": "ls -al",
     "lint": "cd frontend && yarn lint"
   }
 }
