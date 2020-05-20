@@ -2,7 +2,7 @@
 
 Boilerplate to serve `create-react-app` on Deno
 
-<img src='deno-react.png' />
+<img src='deno-react.png' width='80%'/>
 
 ### Features
 - [x] deno static server
