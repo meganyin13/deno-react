@@ -7,7 +7,7 @@ Boilerplate to serve `create-react-app` on Deno
 ### Features
 - [x] deno static server
 - [x] create-react-app boilerplate
-- [] hot reloading
-- [] `yarn create-*` support
-- [] top-level start scripts
-- [] CI/CD & tests
+- [ ] hot reloading
+- [ ] `yarn create-*` support
+- [ ] top-level start scripts
+- [ ] CI/CD & tests
