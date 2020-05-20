@@ -11,12 +11,9 @@
     "build": "webpack --mode production"
   },
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^2.34.0",
-    "eslint": "^6.6.0",
-    "eslint-config-airbnb": "^18.1.0",
-    "eslint-plugin-react": "^7.19.0",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "svg-url-loader": "^5.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.9.6",
@@ -25,7 +22,12 @@
     "@babel/preset-typescript": "^7.9.0",
     "@types/react": "^16.9.35",
     "@types/react-dom": "^16.9.8",
+    "@typescript-eslint/eslint-plugin": "^2.34.0",
     "babel-loader": "^8.1.0",
+    "css-loader": "^3.5.3",
+    "eslint": "^6.6.0",
+    "eslint-config-airbnb": "^18.1.0",
+    "eslint-plugin-react": "^7.19.0",
     "html-loader": "^1.1.0",
     "html-webpack-plugin": "^4.3.0",
     "react-scripts": "^3.4.1",
