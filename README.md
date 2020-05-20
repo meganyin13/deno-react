@@ -1,3 +1,3 @@
-# deno-react
- 
-Serve React frontend with [deno-express](https://github.com/NMathar/deno-express)
+# Deno + React
+
+Boilerplate to serve `create-react-app` on Deno
