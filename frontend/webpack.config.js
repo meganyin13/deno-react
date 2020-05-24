@@ -1,5 +1,5 @@
-const { resolve } = require("path");
-const HtmlWebPackPlugin = require("html-webpack-plugin");
+import { resolve } from "path";
+import HtmlWebPackPlugin from "html-webpack-plugin";
 
 module.exports = {
   entry: {
