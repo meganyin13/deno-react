@@ -1,5 +1,6 @@
 const { resolve } = require("path");
 const HtmlWebPackPlugin = require("html-webpack-plugin");
+const PnpWebpackPlugin = require(`pnp-webpack-plugin`);
 
 module.exports = {
   entry: {
@@ -11,32 +12,38 @@ module.exports = {
   },
   resolve: {
     extensions: [".js", ".jsx", ".ts", ".tsx"],
+    plugins: [
+      PnpWebpackPlugin,
+    ],
+  },
+  resolveLoader: {
+    plugins: [
+      PnpWebpackPlugin.moduleLoader(module),
+    ],
   },
   module: {
     rules: [
       {
         test: /\.(js|jsx|ts|tsx)$/,
-        exclude: /node_modules/,
         include: __dirname + "/src/",
-        use: "babel-loader",
+        use: require.resolve('babel-loader'),
       },
       {
         test: /\.html$/,
-        exclude: /node_modules/,
         use: [
           {
-            loader: "html-loader",
+            loader: require.resolve('html-loader'),
           },
         ],
       },
       {
         test: /\.css$/i,
-        use: ['style-loader', 'css-loader'],
+        use: [require.resolve('style-loader'), require.resolve('css-loader')],
       },
       {
         test: /\.svg/,
         use: {
-          loader: 'svg-url-loader',
+          loader: require.resolve('svg-url-loader'),
           options: {}
         }
       }
