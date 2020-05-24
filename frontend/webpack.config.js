@@ -1,5 +1,5 @@
-import { resolve } from "path";
-import HtmlWebPackPlugin from "html-webpack-plugin";
+const { resolve } = require("path");
+const HtmlWebPackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   entry: {
@@ -16,13 +16,11 @@ module.exports = {
     rules: [
       {
         test: /\.(js|jsx|ts|tsx)$/,
-        exclude: /node_modules/,
         include: __dirname + "/src/",
         use: "babel-loader",
       },
       {
         test: /\.html$/,
-        exclude: /node_modules/,
         use: [
           {
             loader: "html-loader",
