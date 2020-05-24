@@ -1,5 +1,6 @@
 const { resolve } = require("path");
 const HtmlWebPackPlugin = require("html-webpack-plugin");
+const PnpWebpackPlugin = require(`pnp-webpack-plugin`);
 
 module.exports = {
   entry: {
@@ -11,19 +12,27 @@ module.exports = {
   },
   resolve: {
     extensions: [".js", ".jsx", ".ts", ".tsx"],
+    plugins: [
+      PnpWebpackPlugin,
+    ],
+  },
+  resolveLoader: {
+    plugins: [
+      PnpWebpackPlugin.moduleLoader(module),
+    ],
   },
   module: {
     rules: [
       {
         test: /\.(js|jsx|ts|tsx)$/,
         include: __dirname + "/src/",
-        use: "babel-loader",
+        use: require.resolve('babel-loader'),
       },
       {
         test: /\.html$/,
         use: [
           {
-            loader: "html-loader",
+            loader: require.resolve('html-loader'),
           },
         ],
       },
