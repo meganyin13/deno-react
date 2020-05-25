@@ -12,6 +12,6 @@
     ]
   },
   "scripts": {
-    "start": "denon run --allow-net --allow-read server/staticServer.ts"
+    "start": ""
   }
 }
