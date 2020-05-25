@@ -8,7 +8,7 @@
   "license": "MIT",
   "scripts": {
     "build:frontend": "cd frontend && yarn build && cd ..",
-    "start": "yarn build:frontend && deno run --allow-net --allow-read server/staticServer.ts",
+    "start": "yarn build:frontend && denon run --allow-net --allow-read server/staticServer.ts",
     "tsc": "ls -al",
     "lint": "cd frontend && yarn lint"
   }

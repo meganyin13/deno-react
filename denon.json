@@ -1,0 +1,17 @@
+{
+  "$schema": "https://deno.land/x/denon/schema.json",
+  "watcher": {
+    "exts": [
+      "js",
+      "ts",
+      "json",
+      "tsx",
+      "jsx",
+      "css",
+      "html"
+    ]
+  },
+  "scripts": {
+    "start": ""
+  }
+}
