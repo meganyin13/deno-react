@@ -39,7 +39,7 @@
     "pnp-webpack-plugin": "^1.6.4",
     "resolve": "^1.17.0",
     "style-loader": "^1.2.1",
-    "typescript": "^3.9.2",
+    "typescript": "^3.9.3",
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.11"
   },

@@ -9,7 +9,7 @@
   "scripts": {
     "build:frontend": "cd frontend && yarn build && cd ..",
     "start": "yarn build:frontend && denon start",
-    "tsc": "ls -al",
+    "tsc": "cd ./frontend && yarn tsc",
     "lint": "cd frontend && yarn lint"
   }
 }
