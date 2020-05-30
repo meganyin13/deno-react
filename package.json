@@ -1,5 +1,6 @@
 {
   "name": "deno-react",
+  "private": true,
   "version": "1.0.0",
   "description": "Boilerplate to serve create-react-app on Deno",
   "main": "index.js",
@@ -7,9 +8,18 @@
   "author": "Megan Yin <my474@cornell.edu>",
   "license": "MIT",
   "scripts": {
-    "build:frontend": "cd frontend && yarn build && cd ..",
+    "build": "yarn workspace frontend build",
     "start": "yarn build:frontend && denon start",
-    "tsc": "cd ./frontend && yarn tsc",
-    "lint": "cd frontend && yarn lint"
+    "tsc": "yarn workspace frontend tsc",
+    "lint": "yarn workspace frontend lint"
+  },
+  "dependencies": {
+    "frontend": "1.0.0"
+  },
+  "workspaces": [
+    "frontend"
+  ],
+  "devDependencies": {
+    "webpack-cli": "^3.3.11"
   }
 }

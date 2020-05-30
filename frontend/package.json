@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "tsc": "tsc -p ../tsconfig.json",
+    "tsc": "tsc -p ./tsconfig.json",
     "lint": "eslint . --ext .ts --ext .tsx",
     "format": "yarn lint --fix",
     "build": "webpack --mode production"
