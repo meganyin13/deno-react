@@ -1196,7 +1196,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/runtime-corejs3@npm:^7.8.3":
+"@babel/runtime-corejs3@npm:^7.7.4, @babel/runtime-corejs3@npm:^7.8.3":
   version: 7.10.1
   resolution: "@babel/runtime-corejs3@npm:7.10.1"
   dependencies:
@@ -1206,7 +1206,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/runtime@npm:^7.4.5, @babel/runtime@npm:^7.8.4":
+"@babel/runtime@npm:^7.4.5, @babel/runtime@npm:^7.7.4, @babel/runtime@npm:^7.8.4, @babel/runtime@npm:^7.9.2, @babel/runtime@npm:^7.9.6":
   version: 7.10.1
   resolution: "@babel/runtime@npm:7.10.1"
   dependencies:
@@ -1254,6 +1254,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@jest/types@npm:^25.5.0":
+  version: 25.5.0
+  resolution: "@jest/types@npm:25.5.0"
+  dependencies:
+    "@types/istanbul-lib-coverage": ^2.0.0
+    "@types/istanbul-reports": ^1.1.1
+    "@types/yargs": ^15.0.0
+    chalk: ^3.0.0
+  checksum: 3/33ad68320efb297c4bd98975105130e1b4096d631decfc5a093691e24f27fce0410b4a7c5a87b736873271ebc003e48e853529587e584b3152efca572139a4a3
+  languageName: node
+  linkType: hard
+
 "@nodelib/fs.scandir@npm:2.1.3":
   version: 2.1.3
   resolution: "@nodelib/fs.scandir@npm:2.1.3"
@@ -1294,6 +1306,60 @@ __metadata:
   dependencies:
     defer-to-connect: ^2.0.0
   checksum: 3/13d8f71dbd792b620b2cd13d72d086ef031ebefd5263a9db2f34693a32e4d90920fa1d7075cd59bf0c9810b2b1b93ad36d89fc88aba4cd3b8022df7ecc5ffdec
+  languageName: node
+  linkType: hard
+
+"@testing-library/dom@npm:^7.2.2":
+  version: 7.7.0
+  resolution: "@testing-library/dom@npm:7.7.0"
+  dependencies:
+    "@babel/runtime": ^7.9.6
+    aria-query: ^4.0.2
+    dom-accessibility-api: ^0.4.4
+    pretty-format: ^25.5.0
+  checksum: 3/f3c65562f02327195de0bb31780054d2064413d4dc04e4520b39388900c2b487ffce4bbbbf517002713e4b1a147ab412c7c8bd7a788cc685278d6cd8227d7207
+  languageName: node
+  linkType: hard
+
+"@testing-library/jest-dom@npm:^5.5.0":
+  version: 5.9.0
+  resolution: "@testing-library/jest-dom@npm:5.9.0"
+  dependencies:
+    "@babel/runtime": ^7.9.2
+    "@types/testing-library__jest-dom": ^5.0.2
+    chalk: ^3.0.0
+    css: ^2.2.4
+    css.escape: ^1.5.1
+    jest-diff: ^25.1.0
+    jest-matcher-utils: ^25.1.0
+    lodash: ^4.17.15
+    redent: ^3.0.0
+  checksum: 3/31566ae3f1d85718cdda507c9cd04ee82989390f1761f49198815ce5d84419677da3f8b385de7ed8a807ab0be51ecaa726ac68b2d78a351e00a0c460b5730c8d
+  languageName: node
+  linkType: hard
+
+"@testing-library/react@npm:^10.0.4":
+  version: 10.0.4
+  resolution: "@testing-library/react@npm:10.0.4"
+  dependencies:
+    "@babel/runtime": ^7.9.6
+    "@testing-library/dom": ^7.2.2
+    "@types/testing-library__react": ^10.0.1
+  peerDependencies:
+    react: "*"
+    react-dom: "*"
+  checksum: 3/a806425d3c7d2d4a8949da89f0c7d6b5f34057a9a5bbcfa4ad12e8a507e3b9b370ade17b8440eabea279e9c436d073b0923fc58dd807fdc77b18cc7738d7dfb4
+  languageName: node
+  linkType: hard
+
+"@testing-library/user-event@npm:^10.1.0":
+  version: 10.4.0
+  resolution: "@testing-library/user-event@npm:10.4.0"
+  dependencies:
+    "@babel/runtime": ^7.9.6
+  peerDependencies:
+    "@testing-library/dom": ">=5"
+  checksum: 3/be6c155b2c453c9af0540838ac0bcb6aa4a7e5db8c3fb7420856f36d4ff448851cf9d4ff31abba34e0b250fcf6516f4d77e54619b3bf7768eb9e199c49bbe323
   languageName: node
   linkType: hard
 
@@ -1369,6 +1435,42 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/istanbul-lib-coverage@npm:*, @types/istanbul-lib-coverage@npm:^2.0.0":
+  version: 2.0.2
+  resolution: "@types/istanbul-lib-coverage@npm:2.0.2"
+  checksum: 3/4a57a6749c68c0ef6377d213b9681fc18ff0aea8e5867ce8fb976a9409efe3608ef692cfdd5a64d54e428b8bc44ddc1b8f919f638821f615d9d9cdee6b60f300
+  languageName: node
+  linkType: hard
+
+"@types/istanbul-lib-report@npm:*":
+  version: 3.0.0
+  resolution: "@types/istanbul-lib-report@npm:3.0.0"
+  dependencies:
+    "@types/istanbul-lib-coverage": "*"
+  checksum: 3/78aa9f859b6d1b2c02387b401e4e42fdec2e26ffede392e544da108abc6aff35c95b40821116ca46006d94c8b405ffd64465c32514549e997b04f8363de1af5e
+  languageName: node
+  linkType: hard
+
+"@types/istanbul-reports@npm:^1.1.1":
+  version: 1.1.2
+  resolution: "@types/istanbul-reports@npm:1.1.2"
+  dependencies:
+    "@types/istanbul-lib-coverage": "*"
+    "@types/istanbul-lib-report": "*"
+  checksum: 3/92bd1f76a4ce16f5390c80b6b0e657171faf0003b0ff370b3c37739087c825d664493c9debf442c0871d864f1be15c88460f2399ae748186d1a944f16958aea4
+  languageName: node
+  linkType: hard
+
+"@types/jest@npm:*, @types/jest@npm:^25.0.0":
+  version: 25.2.3
+  resolution: "@types/jest@npm:25.2.3"
+  dependencies:
+    jest-diff: ^25.2.1
+    pretty-format: ^25.2.1
+  checksum: 3/fe92624fd7b3b5358ffba8e59108b484de1d01df08dfc66bb597d59d09900db1950717adb8d42ce5f81ba615fa0b8de55fd5446808d92f75b45e08fcbe4cec6e
+  languageName: node
+  linkType: hard
+
 "@types/json-schema@npm:^7.0.3, @types/json-schema@npm:^7.0.4":
   version: 7.0.4
   resolution: "@types/json-schema@npm:7.0.4"
@@ -1413,7 +1515,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-dom@npm:^16.9.8":
+"@types/react-dom@npm:*, @types/react-dom@npm:^16.9.8":
   version: 16.9.8
   resolution: "@types/react-dom@npm:16.9.8"
   dependencies:
@@ -1455,6 +1557,35 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/testing-library__dom@npm:*":
+  version: 7.0.2
+  resolution: "@types/testing-library__dom@npm:7.0.2"
+  dependencies:
+    pretty-format: ^25.1.0
+  checksum: 3/aa1193d45f9527ca7b04b946e6ea2a497a0eb4102c7e344ad17ce8b6fc632c569670df9436962e09cca6f569af8ca8da601b38e1417d8057968bfe0c9fd34223
+  languageName: node
+  linkType: hard
+
+"@types/testing-library__jest-dom@npm:^5.0.2":
+  version: 5.9.1
+  resolution: "@types/testing-library__jest-dom@npm:5.9.1"
+  dependencies:
+    "@types/jest": "*"
+  checksum: 3/0c3a0522632762a3e2c1a92e47fc5ab957d4a818d3edded00bcdf57db2ebbd16faccebc7c40cb9330c12ba5625b9e4b9f6172f1b05fdb602be70f0550d6b56cd
+  languageName: node
+  linkType: hard
+
+"@types/testing-library__react@npm:^10.0.1":
+  version: 10.0.1
+  resolution: "@types/testing-library__react@npm:10.0.1"
+  dependencies:
+    "@types/react-dom": "*"
+    "@types/testing-library__dom": "*"
+    pretty-format: ^25.1.0
+  checksum: 3/20b6597fad68760af1590aa897abc0f75c19f747fc461ae81adf3405c43b37064903df02c38edce2c23c01194b17765feefb4f534cb12679a94b83e7e6240716
+  languageName: node
+  linkType: hard
+
 "@types/uglify-js@npm:*":
   version: 3.9.2
   resolution: "@types/uglify-js@npm:3.9.2"
@@ -1486,6 +1617,22 @@ __metadata:
     "@types/webpack-sources": "*"
     source-map: ^0.6.0
   checksum: 3/bc006cf5cd0333129234f5c0ab0cb22d2ca3288bf8ffb53985fbdafe8dec116da490c68d817087bc58fddbce4f719eecae69b675cfb3d79226c57c66ff7d7453
+  languageName: node
+  linkType: hard
+
+"@types/yargs-parser@npm:*":
+  version: 15.0.0
+  resolution: "@types/yargs-parser@npm:15.0.0"
+  checksum: 3/74bfaefde90fb28eace49469fa6c2da63161176cb6dfbd2cfea2c3cb3268e4ca6abe174ae3ff7e633a49a6d6d1a114901c78799a19d0cbc5a9b539585afe6c4f
+  languageName: node
+  linkType: hard
+
+"@types/yargs@npm:^15.0.0":
+  version: 15.0.5
+  resolution: "@types/yargs@npm:15.0.5"
+  dependencies:
+    "@types/yargs-parser": "*"
+  checksum: 3/2133c8cb5878d13959844f98e546e69dacdf44cd9baf87d84c828a1a093febfc97c8f4df19cffd34a4a4f726a3cdb1851da4391176accf56534c5f8a1c271f46
   languageName: node
   linkType: hard
 
@@ -2007,7 +2154,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ansi-styles@npm:^4.1.0":
+"ansi-styles@npm:^4.0.0, ansi-styles@npm:^4.1.0":
   version: 4.2.1
   resolution: "ansi-styles@npm:4.2.1"
   dependencies:
@@ -2077,6 +2224,16 @@ __metadata:
     ast-types-flow: 0.0.7
     commander: ^2.11.0
   checksum: 3/4603ead43ae64ef3920268b42c612adfc977941f72de1c1b1fcee99041388f7d6dd7cd4fb51957bc160f574b6c4748f478d9f366922bac77eb8e43f4002311bc
+  languageName: node
+  linkType: hard
+
+"aria-query@npm:^4.0.2":
+  version: 4.0.2
+  resolution: "aria-query@npm:4.0.2"
+  dependencies:
+    "@babel/runtime": ^7.7.4
+    "@babel/runtime-corejs3": ^7.7.4
+  checksum: 3/d26256cea7b8b2ce926d7621c7e48d0a990283020846aa930900327f2db78d462039b25ddb37d61dc35f3a842e967b4eb4fa1f0e6dc73d50d6266610cd4f5361
   languageName: node
   linkType: hard
 
@@ -3113,6 +3270,25 @@ __metadata:
   languageName: node
   linkType: hard
 
+"css.escape@npm:^1.5.1":
+  version: 1.5.1
+  resolution: "css.escape@npm:1.5.1"
+  checksum: 3/44fe5e93fee46fe60dbd0cdd078b14ef75697ee93519a7157f976b655463dd66eba598b0df16c16a897ac884c97845d2a3819cb8d370cbf91bc59bb557ebe826
+  languageName: node
+  linkType: hard
+
+"css@npm:^2.2.4":
+  version: 2.2.4
+  resolution: "css@npm:2.2.4"
+  dependencies:
+    inherits: ^2.0.3
+    source-map: ^0.6.1
+    source-map-resolve: ^0.5.2
+    urix: ^0.1.0
+  checksum: 3/b94365b3c07c35529beab95f679102c66d1027774c2e80f5179a6ee11ccc440046aeb7771df33569334bbdfd8ea753dd132197040dc079fcd881141348a1886f
+  languageName: node
+  linkType: hard
+
 "cssesc@npm:^3.0.0":
   version: 3.0.0
   resolution: "cssesc@npm:3.0.0"
@@ -3284,6 +3460,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"diff-sequences@npm:^25.2.6":
+  version: 25.2.6
+  resolution: "diff-sequences@npm:25.2.6"
+  checksum: 3/332484fc00f6beca726d8dbc13095f6006527002bef936a07b4e6bbec681fbaac484e1a7ea4e9ab0d53e375d1cde9e642c8cce31dfe6329cfdf8f01f26b17505
+  languageName: node
+  linkType: hard
+
 "diff@npm:^4.0.1":
   version: 4.0.2
   resolution: "diff@npm:4.0.2"
@@ -3336,6 +3519,13 @@ __metadata:
   dependencies:
     esutils: ^2.0.2
   checksum: 3/2eae469bd2889ceee9892083a67340b3622568fe5290edce620e5d5ddab23d644b2a780e9a7c68ad9c8a62716a70c5e484402ac93a398fa78b54b7505592aa7f
+  languageName: node
+  linkType: hard
+
+"dom-accessibility-api@npm:^0.4.4":
+  version: 0.4.4
+  resolution: "dom-accessibility-api@npm:0.4.4"
+  checksum: 3/476d96a5fdd717e7d760bd5ebbecd1b2cee165171a2c85ea66166ccf46e88807e01ae86b50266e1afedbda233c8394447680e96c3847f769e148e762625e63a3
   languageName: node
   linkType: hard
 
@@ -4249,6 +4439,10 @@ __metadata:
     "@babel/preset-env": ^7.9.6
     "@babel/preset-react": ^7.9.4
     "@babel/preset-typescript": ^7.9.0
+    "@testing-library/jest-dom": ^5.5.0
+    "@testing-library/react": ^10.0.4
+    "@testing-library/user-event": ^10.1.0
+    "@types/jest": ^25.0.0
     "@types/react": ^16.9.35
     "@types/react-dom": ^16.9.8
     "@typescript-eslint/eslint-plugin": ^2.34.0
@@ -4902,6 +5096,13 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
+"indent-string@npm:^4.0.0":
+  version: 4.0.0
+  resolution: "indent-string@npm:4.0.0"
+  checksum: 3/3e54996c6e15ca00a7a4403be705bce4fb3bb4ac637da2e1473006e42a651863f53bfb8c3438c1b3aac77817768ac0cde0e7b7a81a6cf24a1286227a06510dbf
+  languageName: node
+  linkType: hard
+
 "indexes-of@npm:^1.0.1":
   version: 1.0.1
   resolution: "indexes-of@npm:1.0.1"
@@ -5307,6 +5508,37 @@ fsevents@~2.1.2:
   version: 0.1.2
   resolution: "isstream@npm:0.1.2"
   checksum: 3/8e6e5c4cf1823562db7035d2e7bac388412060fe9bc6727eca8c608def5aa57709165c51c2e68a2fce6ff0b64d79489501b84715060c5e8a477b87b6cbcd1eca
+  languageName: node
+  linkType: hard
+
+"jest-diff@npm:^25.1.0, jest-diff@npm:^25.2.1, jest-diff@npm:^25.5.0":
+  version: 25.5.0
+  resolution: "jest-diff@npm:25.5.0"
+  dependencies:
+    chalk: ^3.0.0
+    diff-sequences: ^25.2.6
+    jest-get-type: ^25.2.6
+    pretty-format: ^25.5.0
+  checksum: 3/14a2634ecb159a9a2f061239db1cea0c889e7a72ab05bd1fa799db30efca2ce79291372823f5e3468d9bc856f404f312e44e89c171eea8132b5835d12f71d0b3
+  languageName: node
+  linkType: hard
+
+"jest-get-type@npm:^25.2.6":
+  version: 25.2.6
+  resolution: "jest-get-type@npm:25.2.6"
+  checksum: 3/6051fcb75cdaa8fad66fd5a1e91d2c1597e9ccc54eecd5cd489fd73a00e322d28cb5859b656a8224a41eddab0ecfb875df9ec62f545a76afa1a55d3ba97fba6d
+  languageName: node
+  linkType: hard
+
+"jest-matcher-utils@npm:^25.1.0":
+  version: 25.5.0
+  resolution: "jest-matcher-utils@npm:25.5.0"
+  dependencies:
+    chalk: ^3.0.0
+    jest-diff: ^25.5.0
+    jest-get-type: ^25.2.6
+    pretty-format: ^25.5.0
+  checksum: 3/f60504e34b39b41e1cf3973e380c4cf338e55ad465d62cf64220a263b53ce2f72566f211f0d36eb27bd11b3f42df636956fbe06d60113e1060dd1f1f79001ee6
   languageName: node
   linkType: hard
 
@@ -5814,6 +6046,13 @@ fsevents@~2.1.2:
   version: 3.1.0
   resolution: "mimic-response@npm:3.1.0"
   checksum: 3/cfbf19f66de6ad46df7481d9e8c1a7f30b6fa77dd771ad4a72a0443265041a39768182bde6d1de39001c2774168635bc74f42902e401c8ba33db55d69b773004
+  languageName: node
+  linkType: hard
+
+"min-indent@npm:^1.0.0":
+  version: 1.0.1
+  resolution: "min-indent@npm:1.0.1"
+  checksum: 3/c3aeea46bc432e6ce69b86717e98fbb544e338abb5e3c93cfa196c427e3d5a4a6ee4f76e6931a9e424fb53e83451b90fc417ce7db04440a92d68369704ad11d1
   languageName: node
   linkType: hard
 
@@ -6761,6 +7000,18 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
+"pretty-format@npm:^25.1.0, pretty-format@npm:^25.2.1, pretty-format@npm:^25.5.0":
+  version: 25.5.0
+  resolution: "pretty-format@npm:25.5.0"
+  dependencies:
+    "@jest/types": ^25.5.0
+    ansi-regex: ^5.0.0
+    ansi-styles: ^4.0.0
+    react-is: ^16.12.0
+  checksum: 3/f7cc631d51e22c809d429d20facfd886ba0b212d419d153467872f68688256c2c55563bf70e943b7347ec9180b41a1d19c4235dc171850f9d5382a52959c0245
+  languageName: node
+  linkType: hard
+
 "private@npm:^0.1.8":
   version: 0.1.8
   resolution: "private@npm:0.1.8"
@@ -6976,7 +7227,7 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"react-is@npm:^16.8.1":
+"react-is@npm:^16.12.0, react-is@npm:^16.8.1":
   version: 16.13.1
   resolution: "react-is@npm:16.13.1"
   checksum: 3/11bcf1267a314a522615f626f3ce3727a3a24cdbf61c4d452add3550a7875326669631326cfb1ba3e92b6f72244c32ffecf93ad21c0cad8455d3e169d0e3f060
@@ -7058,6 +7309,16 @@ fsevents@~2.1.2:
   dependencies:
     picomatch: ^2.2.1
   checksum: 3/0159f43eb0a90cf4fde5989b607e0a6bef4e6332dc8648f1b50fbc013f1158e1d021bcfd6dad1dc2895da2bb14cdac408239d047e3d61a01dd3a44376e6ec1f1
+  languageName: node
+  linkType: hard
+
+"redent@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "redent@npm:3.0.0"
+  dependencies:
+    indent-string: ^4.0.0
+    strip-indent: ^3.0.0
+  checksum: 3/78c8aa0a1076f47e0e198bfc8a9aa7d4ae3163c6951bd5de1015e47661bba62ea36573337bbeb4b309b48cc71954edbe43ae4aa3163db1996a781b757c5c47d7
   languageName: node
   linkType: hard
 
@@ -7642,7 +7903,7 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"source-map-resolve@npm:^0.5.0":
+"source-map-resolve@npm:^0.5.0, source-map-resolve@npm:^0.5.2":
   version: 0.5.3
   resolution: "source-map-resolve@npm:0.5.3"
   dependencies:
@@ -7988,6 +8249,15 @@ fsevents@~2.1.2:
   version: 1.0.0
   resolution: "strip-eof@npm:1.0.0"
   checksum: 3/905cd8718ad2e7b3a9c4bc6a9ed409c38b8cef638845a9471884547de0dbe611828d584e749a38d3eebc2d3c830ea9c619d78875a639b7413d93080661807376
+  languageName: node
+  linkType: hard
+
+"strip-indent@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "strip-indent@npm:3.0.0"
+  dependencies:
+    min-indent: ^1.0.0
+  checksum: 3/4a7860e94372753b90a48d032758464efbf194880880fd7636965b7137ae4af24ce77a43d223a602cac787e2e95214aaa2f2470a65986e3d6ffa0e1c3dd887f6
   languageName: node
   linkType: hard
 
