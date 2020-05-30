@@ -9,7 +9,7 @@
   "license": "MIT",
   "scripts": {
     "build": "yarn workspace frontend build",
-    "start": "yarn build:frontend && denon start",
+    "start": "yarn build && denon start",
     "tsc": "yarn workspace frontend tsc",
     "lint": "yarn workspace frontend lint"
   },
