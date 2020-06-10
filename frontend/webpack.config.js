@@ -1,17 +1,17 @@
-const { resolve } = require("path");
-const HtmlWebPackPlugin = require("html-webpack-plugin");
-const PnpWebpackPlugin = require(`pnp-webpack-plugin`);
+const path = require('path');
+const HtmlWebPackPlugin = require('html-webpack-plugin');
+const PnpWebpackPlugin = require('pnp-webpack-plugin');
 
 module.exports = {
   entry: {
-    index: "./src/index.js",
+    index: './src/index.js',
   },
   output: {
-    path: resolve("../public"),
-    filename: "[name].js",
+    path: path.resolve('../public'),
+    filename: '[name].js',
   },
   resolve: {
-    extensions: [".js", ".jsx", ".ts", ".tsx"],
+    extensions: ['.js', '.jsx', '.ts', '.tsx'],
     plugins: [
       PnpWebpackPlugin,
     ],
@@ -25,7 +25,7 @@ module.exports = {
     rules: [
       {
         test: /\.(js|jsx|ts|tsx)$/,
-        include: __dirname + "/src/",
+        include: path.join(__dirname, '/src/'),
         use: require.resolve('babel-loader'),
       },
       {
@@ -44,15 +44,15 @@ module.exports = {
         test: /\.svg/,
         use: {
           loader: require.resolve('svg-url-loader'),
-          options: {}
-        }
-      }
+          options: {},
+        },
+      },
     ],
   },
   plugins: [
     new HtmlWebPackPlugin({
-      template: "./public/index.html",
-      filename: "./index.html",
+      template: './public/index.html',
+      filename: './index.html',
     }),
   ],
 };

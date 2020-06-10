@@ -10,12 +10,12 @@
     "build": "webpack --mode production"
   },
   "dependencies": {
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "svg-url-loader": "^5.0.0",
     "@testing-library/jest-dom": "5.9.0",
     "@testing-library/react": "^10.0.4",
-    "@testing-library/user-event": "^10.1.0"
+    "@testing-library/user-event": "^10.1.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "svg-url-loader": "^5.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.9.6",
@@ -34,6 +34,7 @@
     "css-loader": "^3.5.3",
     "html-loader": "^1.1.0",
     "html-webpack-plugin": "^4.3.0",
+    "jest": "^26.0.1",
     "pnp-webpack-plugin": "^1.6.4",
     "resolve": "^1.17.0",
     "style-loader": "^1.2.1",
