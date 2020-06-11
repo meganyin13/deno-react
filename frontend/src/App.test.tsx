@@ -1,6 +1,7 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import App from './App';
+// @ts-ignore
 import { toBeInTheDocument } from '@testing-library/jest-dom/matchers'
 
 expect.extend({ toBeInTheDocument })
