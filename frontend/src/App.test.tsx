@@ -1,10 +1,11 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
-import App from './App';
 // @ts-ignore
-import { toBeInTheDocument } from '@testing-library/jest-dom/matchers'
+import { toBeInTheDocument } from '@testing-library/jest-dom/matchers';
+import App from './App';
 
-expect.extend({ toBeInTheDocument })
+// @ts-ignore
+expect.extend({ toBeInTheDocument });
 
 test('renders learn react link', () => {
   render(<App />);
