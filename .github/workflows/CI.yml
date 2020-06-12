@@ -24,6 +24,8 @@ jobs:
         run: cd frontend && yarn install
       - name: tsc
         run: yarn tsc
+      - name: test
+        run: yarn test
       - name: lint
         run: yarn lint
       - name: build
