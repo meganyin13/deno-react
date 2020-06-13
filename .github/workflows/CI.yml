@@ -20,7 +20,7 @@ jobs:
       - name: Set up Node
         uses: actions/setup-node@v1  
       - name: install deno
-        uses: cargo install deno | sh && deno upgrade --version 1.1.0
+        uses: deno lint
       - name: Yarn install
         run: cd frontend && yarn install
       - name: tsc
