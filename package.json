@@ -11,8 +11,6 @@
     "build": "yarn workspace frontend build",
     "start": "yarn build && denon start",
     "tsc": "yarn workspace frontend tsc",
-    "lint": "eslint . --ext .ts --ext .tsx",
-    "format": "yarn lint --fix",
     "test": "yarn workspace frontend test"
   },
   "dependencies": {
@@ -22,15 +20,6 @@
     "frontend"
   ],
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^2.34.0",
-    "@typescript-eslint/parser": "^3.0.0",
-    "eslint": "^6.6.0",
-    "eslint-config-airbnb": "^18.1.0",
-    "eslint-import-resolver-node": "^0.3.3",
-    "eslint-plugin-import": "^2.20.2",
-    "eslint-plugin-jsx-a11y": "^6.2.3",
-    "eslint-plugin-react": "^7.19.0",
-    "eslint-plugin-react-hooks": "^4.0.2",
     "typescript": "^3.9.3",
     "webpack-cli": "^3.3.11"
   }

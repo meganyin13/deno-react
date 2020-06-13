@@ -1,6 +1,6 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import logo from "./logo.svg";
+import "./App.css";
 
 export default (): React.ReactElement => (
   <div className="App">
@@ -8,9 +8,9 @@ export default (): React.ReactElement => (
       <img src={logo} className="App-logo" alt="logo" />
       <p>
         Edit
-        {' '}
+        {" "}
         <code>src/App.tsx</code>
-        {' '}
+        {" "}
         and save to reload.
       </p>
       <a
