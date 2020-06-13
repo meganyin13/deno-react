@@ -16,14 +16,19 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-
+      - name: GitHub Action for Deno
+        uses: denolib/deno-action@0.19.0
       - name: Set up Node
-        uses: actions/setup-node@v1  
+        uses: actions/setup-node@v1 
+      - name: upgrade deno
+        run: deno upgrade --version 1.1.0
       - name: Yarn install
         run: cd frontend && yarn install
       - name: tsc
         run: yarn tsc
       - name: test
         run: yarn test
+      - name: lint
+        run: deno lint --unstable ./server ./frontend
       - name: build
         run: yarn build
