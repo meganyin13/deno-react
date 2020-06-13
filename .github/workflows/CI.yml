@@ -19,14 +19,11 @@ jobs:
 
       - name: Set up Node
         uses: actions/setup-node@v1  
-  
       - name: Yarn install
         run: cd frontend && yarn install
       - name: tsc
         run: yarn tsc
       - name: test
         run: yarn test
-      - name: lint
-        run: yarn lint
       - name: build
         run: yarn build
