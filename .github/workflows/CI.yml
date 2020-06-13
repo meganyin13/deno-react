@@ -19,15 +19,11 @@ jobs:
 
       - name: Set up Node
         uses: actions/setup-node@v1  
-      - name: install deno
-        uses: deno lint
       - name: Yarn install
         run: cd frontend && yarn install
       - name: tsc
         run: yarn tsc
       - name: test
         run: yarn test
-      - name: deno lint
-        run: deno lint --unstable
       - name: build
         run: yarn build
