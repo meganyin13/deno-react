@@ -4,7 +4,7 @@ const PnpWebpackPlugin = require("pnp-webpack-plugin");
 
 module.exports = {
   entry: {
-    index: "./src/index.js",
+    index: "./src/index.jsx",
   },
   output: {
     path: path.resolve("../public"),
