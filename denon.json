@@ -12,6 +12,18 @@
     ]
   },
   "scripts": {
-    "start": "deno run --allow-net --allow-read server/staticServer.ts"
+    "start": {
+      "cmd": "deno run server/staticServer.ts",
+      "desc": "Run the main server",
+      "allow": [
+        "read",
+        "net"
+      ]
+    }
+  },
+  "logger": {
+    "fullscreen": true,
+    "quiet": true,
+    "debug": true
   }
 }
