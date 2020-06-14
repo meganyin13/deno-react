@@ -1,6 +1,5 @@
 import React from "react";
 import { render, screen } from "@testing-library/react";
-// deno-lint-ignore ban-ts-comment
 // @ts-ignore
 import { toBeInTheDocument } from "@testing-library/jest-dom/matchers";
 import App from "./App";
