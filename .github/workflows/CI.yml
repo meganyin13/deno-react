@@ -16,8 +16,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - name: GitHub Action for Deno
-        uses: denolib/deno-action@0.19.0
+      - name: Setup Deno environment
+        uses: denolib/setup-deno@v1.3.0
       - name: Set up Node
         uses: actions/setup-node@v1 
       - name: upgrade deno
