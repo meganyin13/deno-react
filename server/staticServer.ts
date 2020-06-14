@@ -1,7 +1,7 @@
 // @ts-ignore deno import
 import { Application, send, Context } from "https://deno.land/x/oak/mod.ts"; // eslint-disable-line
 
-const port = 3001;
+const port = 3000;
 const app = new Application();
 
 app.use(async (ctx: Context) => {
