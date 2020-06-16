@@ -4618,6 +4618,7 @@ __metadata:
     resolve: ^1.17.0
     style-loader: ^1.2.1
     svg-url-loader: ^5.0.0
+    web-vitals: ^0.2.2
     webpack: ^4.43.0
     webpack-cli: ^3.3.11
   languageName: unknown
@@ -9789,6 +9790,13 @@ typescript@^3.9.3:
     watchpack-chokidar2:
       optional: true
   checksum: a9d630dd29279b91bb1b1dd319e9142f13906e8cc973c860e0662828cff84e2a3235a66da62759cb4f12dc76a6f672760e62b2c8a6406ff80d5e4977b5717e83
+  languageName: node
+  linkType: hard
+
+"web-vitals@npm:^0.2.2":
+  version: 0.2.2
+  resolution: "web-vitals@npm:0.2.2"
+  checksum: 3af40edf4cfcfa5e3ba5d8901c89564c0399b5d4e49178ad20f3bc04df9842af447b98065e4c1b02aefe41753b33bb0737b9503f57e686a1f27066f4a4fc60df
   languageName: node
   linkType: hard
 
