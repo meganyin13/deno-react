@@ -31,7 +31,8 @@
     "@testing-library/user-event": "^10.1.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "svg-url-loader": "^5.0.0"
+    "svg-url-loader": "^5.0.0",
+    "web-vitals": "^0.2.2"
   },
   "devDependencies": {
     "@babel/core": "^7.9.6",
