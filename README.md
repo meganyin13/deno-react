@@ -10,5 +10,5 @@ Boilerplate to serve `create-react-app` on Deno
 - [x] hot reloading
 - [ ] `yarn create-*` support
 - [x] top-level start scripts
-- [ ] CI/CD & tests
+- [x] CI & tests
 - [ ] better log outputs
